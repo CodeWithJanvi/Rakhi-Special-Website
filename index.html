@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rishav ❤️ | Not By Blood, By Heart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================
+     PRELOADER
+========================================= -->
+
+<div id="preloader">
+
+    <div class="loader-ring"></div>
+
+    <div class="loader-content">
+
+        <div class="loader-rakhi">🧵</div>
+
+        <p>A little surprise for</p>
+
+        <h1>RISHAV</h1>
+
+        <span>Not by blood. By heart. ❤️</span>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     GLOBAL UI
+========================================= -->
+
+<div class="progress-bar"></div>
+
+<div class="cursor-heart">♥</div>
+
+<div class="cursor-sparkle"></div>
+
+
+<audio id="rakhiMusic" preload="auto" loop>
+    <source src="SONG/Tenu Sang Rakhna Song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-glow"></div>
+
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <div class="hero-rings">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow hero-eyebrow">
+            A Rakhi surprise for my Big Brother
+        </p>
+
+        <h1 class="hero-title">
+            Rishav
+            <span>❤️</span>
+        </h1>
+
+        <div class="hero-divider">
+            <span></span>
+            ✦
+            <span></span>
+        </div>
+
+        <p class="hero-text">
+            Not my brother by blood.
+            <br>
+            <strong>My brother by heart.</strong>
+        </p>
+
+        <p class="hero-small">
+            Some bonds aren't created by blood...
+            <br>
+            they're created by choice, respect & heart.
+        </p>
+
+        <button class="primary-btn magnetic" id="startBtn">
+            OPEN YOUR RAKHI SURPRISE
+            <span>→</span>
+        </button>
+
+        <div class="scroll-text">
+            ↓ Scroll slowly, Bhai
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     RAKHI
+========================================= -->
+
+<section class="rakhi-section" id="rakhi">
+
+    <div class="section-number">
+        01
+    </div>
+
+    <div class="section-grid">
+
+        <div class="text-content reveal-left">
+
+            <p class="eyebrow">
+                The most important moment
+            </p>
+
+            <h2>
+                Haath do, Bhai. 🧵
+            </h2>
+
+            <p>
+                Aaj tumhari behen sirf Rakhi nahi baandh rahi...
+            </p>
+
+            <p>
+                Woh tumhe ek lifetime reminder de rahi hai:
+            </p>
+
+            <div class="highlight-line">
+                Tum mere Big Brother ho. ❤️
+            </div>
+
+            <button class="primary-btn magnetic" id="tieBtn">
+                🧵 BANDHO RAKHI
+            </button>
+
+            <div class="tie-status" id="tieStatus">
+                ❤️ Rakhi bandhne ke liye button dabao...
+            </div>
+
+        </div>
+
+
+        <div class="character-frame reveal-right" id="characterFrame">
+
+            <div class="image-shine"></div>
+
+            <img
+                src="img/animation.jpg"
+                alt="Sister tying Rakhi to brother"
+            >
+
+            <svg
+                class="rakhi-svg"
+                viewBox="0 0 740 740"
+                preserveAspectRatio="none"
+            >
+
+                <path
+                    id="rakhiThread"
+                    d="
+                    M330 363
+                    C350 350 369 352 383 365
+                    C396 377 410 382 423 374
+                    C436 366 450 370 456 383
+                    C461 395 452 405 439 407
+                    C423 409 409 400 397 390
+                    C386 380 373 378 360 387
+                    "
+                />
+
+                <path
+                    id="rakhiHighlight"
+                    d="
+                    M330 363
+                    C350 350 369 352 383 365
+                    C396 377 410 382 423 374
+                    C436 366 450 370 456 383
+                    C461 395 452 405 439 407
+                    C423 409 409 400 397 390
+                    C386 380 373 378 360 387
+                    "
+                />
+
+                <g id="rakhiCenter">
+
+                    <circle
+                        cx="404"
+                        cy="389"
+                        r="22"
+                        class="rakhi-outer"
+                    />
+
+                    <circle
+                        cx="404"
+                        cy="389"
+                        r="13"
+                        class="rakhi-inner"
+                    />
+
+                    <circle
+                        cx="404"
+                        cy="389"
+                        r="5"
+                        class="rakhi-dot"
+                    />
+
+                </g>
+
+                <g id="sparkles">
+
+                    <text x="365" y="330">✦</text>
+                    <text x="440" y="345">♥</text>
+                    <text x="462" y="405">✦</text>
+                    <text x="380" y="440">♥</text>
+                    <text x="425" y="330">✦</text>
+                    <text x="350" y="400">✦</text>
+
+                </g>
+
+            </svg>
+
+            <div
+                class="rakhi-badge"
+                id="rakhiBadge"
+            >
+                RAKHI BANDH GAYI ❤️
+            </div>
+
+            <div class="image-caption">
+                <span>RAKHI MOMENT</span>
+                <span>∞</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     WISHES
+========================================= -->
+
+<section class="wishes-section" id="wishes">
+
+    <div class="section-number">
+        02
+    </div>
+
+    <div class="section-heading reveal">
+
+        <p class="eyebrow">
+            Behen ki thodi si demand
+        </p>
+
+        <h2>
+            Rishav Bhai,
+            <br>
+            ek promise? 😏
+        </h2>
+
+        <p>
+            Rakhi ke saath kuch wishes free mein mil rahi hain.
+            Lifetime warranty. 😂
+        </p>
+
+    </div>
+
+
+    <div class="wish-grid">
+
+        <div class="wish-card reveal-card">
+
+            <div class="wish-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Bad girls se bachna
+            </h3>
+
+            <p>
+                Jo tumhari peace, respect aur happiness
+                ko disturb karein, unse distance.
+            </p>
+
+            <strong>
+                Good people only. ❤️
+            </strong>
+
+        </div>
+
+
+        <div class="wish-card reveal-card">
+
+            <div class="wish-icon">
+                😌
+            </div>
+
+            <h3>
+                Gussa thoda kam
+            </h3>
+
+            <p>
+                Har baat pe gussa zaroori nahi.
+                Tumhara calm version zyada handsome hai, Bhai. 😂
+            </p>
+
+        </div>
+
+
+        <div class="wish-card reveal-card">
+
+            <div class="wish-icon">
+                🤐
+            </div>
+
+            <h3>
+                Gali thodi kam
+            </h3>
+
+            <p>
+                Rakhi ki kasam nahi de rahi...
+                Bas behen ki request samajh lo. 😭😂
+            </p>
+
+        </div>
+
+
+        <div class="wish-card reveal-card">
+
+            <div class="wish-icon">
+                ❤️
+            </div>
+
+            <h3>
+                Khud ka khayal
+            </h3>
+
+            <p>
+                Khush rehna.
+                Safe rehna.
+                Aur apni life mein wahi log rakhna
+                jo genuinely tumhe respect karein.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PROMISE GAME
+========================================= -->
+
+<section class="promise-section">
+
+    <div class="promise-card reveal">
+
+        <p class="eyebrow">
+            Official Bhai Agreement
+        </p>
+
+        <h2>
+            Ab ek-ek promise confirm karo. 😈
+        </h2>
+
+        <p class="promise-sub">
+            Skip karne ka option nahi hai, Rishav Bhai. 😂
+        </p>
+
+
+        <div class="promise-progress">
+
+            <div class="promise-progress-bar">
+                <span id="promiseProgress"></span>
+            </div>
+
+            <small id="promiseCounter">
+                0 / 4 promises
+            </small>
+
+        </div>
+
+
+        <div class="promise-list">
+
+            <button class="promise-item" data-promise="0">
+                <span>🛡️</span>
+                <b>Bad girls se bachunga</b>
+                <i>○</i>
+            </button>
+
+            <button class="promise-item" data-promise="1">
+                <span>😌</span>
+                <b>Gussa thoda kam karunga</b>
+                <i>○</i>
+            </button>
+
+            <button class="promise-item" data-promise="2">
+                <span>🤐</span>
+                <b>Gali thodi kam dunga</b>
+                <i>○</i>
+            </button>
+
+            <button class="promise-item" data-promise="3">
+                <span>❤️</span>
+                <b>Apna khayal rakhunga</b>
+                <i>○</i>
+            </button>
+
+        </div>
+
+
+        <div
+            class="promise-success"
+            id="promiseSuccess"
+        >
+
+            <div class="success-heart">
+                ❤️
+            </div>
+
+            <h3>
+                AGREEMENT ACCEPTED!
+            </h3>
+
+            <p>
+                Rishav Bhai officially passed
+                the Behen Verification Test. 😂
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     NOK JHOK
+========================================= -->
+
+<section class="nok-section" id="nok">
+
+    <div class="section-number white-number">
+        03
+    </div>
+
+    <div class="section-grid">
+
+        <div class="chat-box">
+
+            <div class="chat-title">
+                <span class="online-dot"></span>
+                Behen vs Bhai
+            </div>
+
+            <div class="chat sister">
+                Bhai, gussa kam karna. 😌
+            </div>
+
+            <div class="chat brother">
+                Haan haan... 😭
+            </div>
+
+            <div class="chat sister">
+                Gali bhi kam.
+            </div>
+
+            <div class="chat brother">
+                Accha baba 😂
+            </div>
+
+            <div class="chat sister">
+                Aur bad girls se bachke! 👀
+            </div>
+
+            <div class="chat brother">
+                Bas ab lecture mat dena! 😭
+            </div>
+
+            <div class="chat sister">
+                Lecture nahi...
+                Rakhi ka warranty card hai. ❤️
+            </div>
+
+        </div>
+
+
+        <div class="text-content white-text reveal-right">
+
+            <p class="eyebrow">
+                Our special talent
+            </p>
+
+            <h2>
+                Nok-jhok is compulsory. 😂
+            </h2>
+
+            <p>
+                Big brother ko chidhana sister ka
+                fundamental right hai.
+            </p>
+
+            <p>
+                Aur Bhai ka kaam hai pretend karna
+                ki woh irritate ho raha hai. 😏
+            </p>
+
+            <button
+                class="white-btn magnetic"
+                id="jokeBtn"
+            >
+                Click Here Bhai 😈
+            </button>
+
+            <p
+                class="joke-result"
+                id="jokeResult"
+            ></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PHOTOS
+========================================= -->
+
+<section class="photos-section">
+
+    <div class="section-number">
+        04
+    </div>
+
+    <div class="section-heading reveal">
+
+        <p class="eyebrow">
+            Three little memories
+        </p>
+
+        <h2>
+            Teen moments.
+            <br>
+            Ek bond. ❤️
+        </h2>
+
+    </div>
+
+
+    <div class="photo-grid">
+
+        <div
+            class="photo-card photo-reveal"
+            data-title="Your Cute Pic ❤️"
+            data-image="img/r1.jpg"
+        >
+
+            <div class="photo-number">
+                01
+            </div>
+
+            <img
+                src="img/r1.jpg"
+                alt="Rishav memory"
+            >
+
+            <div class="photo-overlay">
+                <span>VIEW MEMORY</span>
+                <b>↗</b>
+            </div>
+
+            <div class="photo-label">
+                Your Cute Pic ❤️
+            </div>
+
+        </div>
+
+
+        <div
+            class="photo-card photo-reveal"
+            data-title="Your Smart Look ❤️"
+            data-image="img/r2.jpg"
+        >
+
+            <div class="photo-number">
+                02
+            </div>
+
+            <img
+                src="img/r2.jpg"
+                alt="Rishav memory"
+            >
+
+            <div class="photo-overlay">
+                <span>VIEW MEMORY</span>
+                <b>↗</b>
+            </div>
+
+            <div class="photo-label">
+                Your Smart Look ❤️
+            </div>
+
+        </div>
+
+
+        <div
+            class="photo-card photo-reveal"
+            data-title="Dashing Big Brother ❤️"
+            data-image="img/r3.jpg"
+        >
+
+            <div class="photo-number">
+                03
+            </div>
+
+            <img
+                src="img/r3.jpg"
+                alt="Rishav memory"
+            >
+
+            <div class="photo-overlay">
+                <span>VIEW MEMORY</span>
+                <b>↗</b>
+            </div>
+
+            <div class="photo-label">
+                Dashing Big Brother ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PHOTO MODAL
+========================================= -->
+
+<div
+    class="photo-modal"
+    id="photoModal"
+>
+
+    <button id="closeModal">
+        ×
+    </button>
+
+    <img
+        id="modalImage"
+        src=""
+        alt=""
+    >
+
+    <div id="modalTitle"></div>
+
+</div>
+
+
+<!-- =========================================
+     LETTER
+========================================= -->
+
+<section class="letter-section">
+
+    <div class="letter-card reveal">
+
+        <div class="letter-top">
+            <span>✦</span>
+            <span>FROM YOUR SISTER</span>
+            <span>✦</span>
+        </div>
+
+        <p class="eyebrow">
+            A letter I wanted you to read
+        </p>
+
+        <h2>
+            Rishav Bhai...
+        </h2>
+
+
+        <div
+            class="letter-text"
+            id="letterText"
+        >
+
+            You are not my brother because
+            we share the same blood.
+
+            You became my Big Brother because
+            somewhere along the way,
+            you became family to my heart.
+
+            Hum saath bade nahi hue.
+
+            Tum mere childhood wale bhai nahi ho.
+
+            But honestly...
+
+            You don't have to be.
+
+            You are my Big Brother —
+            not by blood,
+            but by heart. ❤️
+
+            Is Rakhi par meri bas itni si wish hai:
+
+            Bad girls se bachna.
+
+            Gussa thoda kam karna.
+
+            Gali thodi kam bolna.
+
+            Apna khayal rakhna.
+
+            Aur hamesha unhi logon ko
+            apne paas rakhna
+            jo tumhari respect aur happiness
+            ko samjhein.
+
+            Main tumhe lecture nahi de rahi...
+
+            Main bas tumhari behen hoon. 😂
+
+            Happy Raksha Bandhan,
+            Rishav Bhai.
+
+            Stay my Big Brother forever. ❤️
+
+        </div>
+
+
+        <div class="signature">
+            — Your Sister ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SECRET
+========================================= -->
+
+<section class="secret-section">
+
+    <div class="secret-particles"></div>
+
+    <div class="secret-box reveal">
+
+        <div class="lock-icon" id="lockIcon">
+            🔐
+        </div>
+
+        <p class="eyebrow">
+            One last surprise
+        </p>
+
+        <h2>
+            Rishav Bhai,
+            <br>
+            Unlock this.
+        </h2>
+
+        <p>
+            There is one final Rakhi promise
+            waiting for you.
+        </p>
+
+
+        <button
+            class="primary-btn secret-btn magnetic"
+            id="unlockBtn"
+        >
+            UNLOCK MY SECRET ❤️
+        </button>
+
+
+        <div
+            class="countdown"
+            id="countdown"
+        ></div>
+
+
+        <div
+            class="secret-message"
+            id="secretMessage"
+        >
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h3>
+                Officially confirmed.
+            </h3>
+
+            <p>
+
+                <strong>
+                    RISHAV = MY BIG BROTHER
+                </strong>
+
+                <br><br>
+
+                Not by blood.
+                <br>
+                Not by childhood.
+
+                <br><br>
+
+                <strong>
+                    By heart. Forever. ❤️
+                </strong>
+
+            </p>
+
+            <button
+                class="white-btn"
+                id="final-section"
+            >
+                Best Brother Forever ✨
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FINAL
+========================================= -->
+
+<section class="final-section" id="final-section">
+
+    <div class="final-fireworks"></div>
+
+    <div class="final-content">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <p class="eyebrow">
+            Happy Raksha Bandhan
+        </p>
+
+        <h2>
+            Rishav Bhai
+        </h2>
+
+        <p>
+            My Big Brother.
+            <br>
+            <strong>
+                Not by blood, but by heart.
+            </strong>
+        </p>
+
+        <div class="final-line">
+            Raksha
+            <span>•</span>
+            Respect
+            <span>•</span>
+            Nok-Jhok
+            <span>•</span>
+            Forever ❤️
+        </div>
+
+        <div class="final-message">
+            Made with a little love,
+            a little nok-jhok,
+            and a lot of sister energy. 😂❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GSAP -->
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+</script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
